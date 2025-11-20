@@ -1,0 +1,21 @@
+class Character:
+    #Everybody starts off with the same stats
+    weapon = None
+    hp = 100
+    money = 100
+    food = []
+    def __init__(self, name):
+        self.name = name
+
+    def __str__(self):
+        print(f"{self.name}\n HP = {self.hp}\n Money{self.money}")
+
+    def check_food_bag(self):
+        for item in self.food:
+            print(item)
+
+class Food:
+    def __init__(self, name, calories):
+        self.name = name
+        self.calories = calories
+        
